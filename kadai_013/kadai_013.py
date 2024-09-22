@@ -1,4 +1,4 @@
 def price(value, tax):
-    total = value * tax
-    print(f"{total}円")
-price(120,1.1)
+    return value * tax
+total = price(120,1.1)
+print(f"{total}円")
