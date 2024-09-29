@@ -8,9 +8,14 @@ class Human:
         else:
             print("大人ではありません")
 
-user_names = ["あ", "い", "う", "え", "お", "ん"]
-user_ages = [2, 12, 22, 32, 42, 99]
+user1 = Human("あ", 9)
+user2 = Human("い", 19)
+user3 = Human("う", 20)
+user4 = Human("え", 21)
+user5 = Human("お", 20)
+user6 = Human("ん", 100)
 
-for i in range(0,5):
-    user = Human(user_names[i], user_ages[i])
+user_list = [user1, user2, user3, user4, user5, user6]
+
+for user in user_list:
     user.check_adult()
